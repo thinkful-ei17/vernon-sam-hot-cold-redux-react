@@ -1,4 +1,4 @@
-import {SUBMIT_GUESS} from './actions';
+import {SUBMIT_GUESS, NEW_GAME} from './actions';
 
 const initialState = {
   guesses: [],
@@ -38,7 +38,11 @@ const generateFeedback = (guess, answer) => {
         feedback: generateFeedback(guess, state.correctAnswer),
       })
     }
-  } 
+  } else if (action.type === NEW_GAME) {
+    return Object.assign({}, initialState, {
+      correctAnswer: Math.round(Math.random() * 100) + 1
+    });
+  }
   return state;
 }
 export default reducer;
