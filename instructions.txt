@@ -1,0 +1,11 @@
+Requirements
+All of the state which is currently contained in components should be moved into a Redux store.
+The information from the store should be propagated to the components using React Redux's connect method.
+Your app should have a single reducer which handles any actions which you need to make the app's functionality work.
+The components should handle any user interaction by dispatching actions to the store.
+Hints and tips
+Try designing your state and connecting your components first.
+Add some dummy data to make sure that you are propagating and displaying the data correctly.
+Make a list of everything which a user can do in the game - these will become your actions.
+Implement one feature at a time. You don't need to make starting a new game, making guesses, and displaying feedback all functional at once.
+Remember to avoid mutating the state in your reducer.
