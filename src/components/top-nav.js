@@ -33,7 +33,7 @@ export function TopNav(props) {
             /* the `visuallyhidden` class hides an element 
             while leaving it available to screen reader users  */
             className="visuallyhidden focusable status-link"
-            onClick={() => props.onGenerateAuralUpdate()}
+            // onClick={() => props.onGenerateAuralUpdate()}
           >
             Hear state of game
           </a>
